@@ -1,58 +1,43 @@
-# 📊 AI Data Analysis Agent
+# 📊 [Data Analyst AI Agent]
 
-### 🎓 FREE Step-by-Step Tutorial 
-**👉 [Click here to follow our complete step-by-step tutorial](https://www.theunwindai.com/p/build-an-ai-data-analysis-agent) and learn how to build this from scratch with detailed code walkthroughs, explanations, and best practices.**
+An AI data analysis agent that lets you ask questions about CSV and Excel files in plain English. It is powered by Google Gemini, built with the Agno agent framework, and uses DuckDB to run the queries.
 
-An AI data analysis Agent built using the Agno Agent framework and Openai's gpt-4o model. This agent helps users analyze their data - csv, excel files through natural language queries, powered by OpenAI's language models and DuckDB for efficient data processing - making data analysis accessible to users regardless of their SQL expertise.
+## What it does
 
-## Features
+- Upload a CSV or Excel file and the schema is detected automatically
+- Ask questions in natural language, with no SQL needed
+- The agent turns your question into a SQL query and runs it on DuckDB
+- Results are shown in a Streamlit interface
+- [Add anything else you built, e.g. charts, query history]
 
-- 📤 **File Upload Support**: 
-  - Upload CSV and Excel files
-  - Automatic data type detection and schema inference
-  - Support for multiple file formats
+## Tech stack
 
-- 💬 **Natural Language Queries**: 
-  - Convert natural language questions into SQL queries
-  - Get instant answers about your data
-  - No SQL knowledge required
+- Python
+- Agno (agent framework)
+- Google Gemini 
+- DuckDB
+- Streamlit
 
-- 🔍 **Advanced Analysis**:
-  - Perform complex data aggregations
-  - Filter and sort data
-  - Generate statistical summaries
-  - Create data visualizations
+## Getting started
 
-- 🎯 **Interactive UI**:
-  - User-friendly Streamlit interface
-  - Real-time query processing
-  - Clear result presentation
-
-## How to Run
-
-1. **Setup Environment**
+1. Clone the repo
    ```bash
-   # Clone the repository
-   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-   cd awesome-llm-apps/starter_ai_agents/ai_data_analysis_agent
-
-   # Install dependencies
+   git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
+   cd YOUR-REPO
+   ```
+2. Install dependencies
+   ```bash
    pip install -r requirements.txt
    ```
-
-2. **Configure API Keys**
-   - Get OpenAI API key from [OpenAI Platform](https://platform.openai.com)
-
-3. **Run the Application**
+3. Get a Gemini API key from [Google AI Studio](https://aistudio.google.com/apikey)
+4. Run the app
    ```bash
-   streamlit run ai_data_analyst.py
+   streamlit run [your_main_file].py
    ```
+5. Paste your Gemini API key in the sidebar, upload a file, and start asking questions
 
-## Usage
+## Example questions
 
-1. Launch the application using the command above
-2. Provide your OpenAI API key in the sidebar of Streamlit
-3. Upload your CSV or Excel file through the Streamlit interface
-4. Ask questions about your data in natural language
-5. View the results and generated visualizations
-
+- "What are the top 5 products by revenue?"
+- "Show the average [column] grouped by [column]"
+- [Add examples that fit your own sample data]
